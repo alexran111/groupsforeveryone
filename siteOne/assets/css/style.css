@@ -791,7 +791,7 @@ input[placeholder], [placeholder], *[placeholder] { color: #fff !important; }
   -o-background-size: cover;
   background-size: cover; }
   
-.imagebg-1 { background: url('../img/barack.jpg') no-repeat center bottom; }
+.imagebg-1 { background: url('../img/sculpturegroup.jpg') no-repeat center bottom; }
 
 .imagebg-2 { background: #00B4CC url('../img/card.png') no-repeat center bottom; }
 
