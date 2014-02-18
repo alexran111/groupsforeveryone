@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!-- Its not valid html but it works -->
-        <title>Groups For Everyone</title>
+        <title>Group Center</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="A very good admin theme" />
         <meta name="author" content="AHthemes" />
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="work"> <!-- Work panel -->
+            <div class="work" id="gp1"> <!-- Group panel 1 -->
                 <span class="closeicon"><i class="icon-remove"></i></span>
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 hidden-xs">
@@ -90,14 +90,42 @@
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     	<div class="well purple fixed-height">
-                        	<h2>Project that we worked on and is cool</h2>
+                        	<h2>Project 1 that we worked on and is cool</h2>
                     	</div>
                     </div>
                 </div>
                 <div class="row">
                 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 	                    <div class="well plum fluid-height overflow-show">
-	                        <h1>Portfolio Item</h1>
+	                        <h1>Portfolio Item 1</h1>
+	                        <p>
+	                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed congue odio. Aliquam sed mi id massa faucibus dapibus. Suspendisse et mi felis. Nam ornare orci in tortor tempor porta. Fusce sed dapibus nisi, ut scelerisque ligula. Donec at leo est. Morbi condimentum fermentum tellus, ac mattis felis rutrum vitae.
+	                        </p>
+	                        <div class="outer-box-work">
+	                            <p>Donec molestie, lacus a egestas feugiat, odio odio tincidunt enim, et consectetur tortor nisl eu arcu. Ut nec ultricies augue, sit amet ultricies mauris. In erat nisi, scelerisque in nisl et, pretium imperdiet arcu. Suspendisse potenti.</p>
+	                        </div>
+	                        <p class="big">In elementum interdum risus, nec vulputate erat rutrum at. Fusce posuere adipiscing tempor. Aenean bibendum a leo at elementum. Curabitur ut lectus at enim gravida mollis. Aliquam nisi mi, rutrum nec dolor at, ullamcorper ornare est. Fusce cursus consectetur mauris vel laoreet. Sed ligula tortor, gravida in nibh non, luctus semper orci. Aliquam sed pretium diam, non elementum purus. In purus erat, mollis a congue sit amet, elementum ut enim. Phasellus blandit sapien at orci dictum tempus. Nullam et lobortis orci.
+	                        </p>
+	                    </div>
+	                </div>
+                </div>
+            </div>
+            <div class="work" id="gp2"> <!-- Group panel 2 -->
+                <span class="closeicon"><i class="icon-remove"></i></span>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 hidden-xs">
+                    	<div class="well imagebg-3 fixed-height"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    	<div class="well purple fixed-height">
+                        	<h2>Project 2 that we worked on and is cool</h2>
+                    	</div>
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	                    <div class="well plum fluid-height overflow-show">
+	                        <h1>Portfolio Item 2</h1>
 	                        <p>
 	                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed congue odio. Aliquam sed mi id massa faucibus dapibus. Suspendisse et mi felis. Nam ornare orci in tortor tempor porta. Fusce sed dapibus nisi, ut scelerisque ligula. Donec at leo est. Morbi condimentum fermentum tellus, ac mattis felis rutrum vitae.
 	                        </p>
@@ -120,7 +148,7 @@
 	        <div class="row">
 	            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"> 
 	            	<div class="well orange shadow fixed-height"> <!-- Fixed height for 300px on all devices, shadow for a shadow and orange for the color -->
-		                <h1>FIND A GROUP THAT FITS YOUR NEEDS</h1>
+		                <h1>GROUP CENTER</h1>
 		                <p class="big">Supportive</p>
 		              	<p class="big">Effective</p>
 	            	</div>
@@ -182,12 +210,117 @@
 	            </ul>
 	        </div>
 	        <div class="row">
+		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 click" id="portfolio"> <!-- using .click because its clickable #portfolio is a trigger all changable in the script.js file, no padding lets the portfolio-img be full div -->
+		        	<div class="well no-padding">
+			            <div class="portfolio-img one"> <!-- uses backstretch.js for full div effect, changable in script.js -->
+			                <div class="hover-effect effect-one">
+			                    <p class="text-center">
+			                        Portfolio Item #1
+			                    </p>
+			                </div>
+			            </div>
+		        	</div>
+		        </div>
+		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 click" id="portfolio2">
+		        	<div class="well no-padding">
+			            <div class="portfolio-img two">
+			                <div class="hover-effect effect-two">
+			                    <p class="text-center">
+			                        Portfolio Item #2
+			                    </p>
+			                </div>
+			            </div>
+		        	</div>
+		        </div>
+		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 click" id="portfolio3">
+		            <div class="well no-padding">
+			            <div class="portfolio-img three">
+			                <div class="hover-effect effect-three">
+			                    <p class="text-center">
+			                        Portfolio Item #3
+			                    </p>
+			                </div>
+			            </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="row">
+		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio4">
+		            <div class="well no-padding">
+			            <div class="portfolio-img four">
+			                <div class="hover-effect effect-four">
+			                    <p class="text-center">
+			                        Portfolio Item #4
+			                    </p>
+			                </div>
+			            </div>
+		            </div>
+		        </div>
+		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio5">
+		            <div class="well no-padding">
+			            <div class="portfolio-img five">
+			                <div class="hover-effect effect-five">
+			                    <p class="text-center">
+			                        Portfolio Item #5
+			                    </p>
+			                </div>
+			            </div>
+		            </div>
+		        </div>
+		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio6">
+		            <div class="well no-padding">
+			            <div class="portfolio-img six">
+			                <div class="hover-effect effect-six">
+			                    <p class="text-center">
+			                        Portfolio Item #6
+			                    </p>
+			                </div>
+			            </div>
+		            </div>
+		        </div>
+	        </div>
+<!-- 	        <div class="row">
+	            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio7">
+	                <div class="well no-padding">
+		                <div class="portfolio-img seven">
+		                    <div class="hover-effect effect-seven">
+		                        <p class="text-center">
+		                            Portfolio Item #7
+		                        </p>
+		                    </div>
+		                </div>
+	                </div>
+	            </div>
+	            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio8">
+	                <div class="well no-padding">
+		                <div class="portfolio-img eight">
+		                    <div class="hover-effect effect-eight">
+		                        <p class="text-center">
+		                            Portfolio Item #8
+		                        </p>
+		                    </div>
+		                </div>
+	                </div>
+	            </div>
+	            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio9">
+	                <div class="well no-padding">
+		                <div class="portfolio-img nine">
+		                    <div class="hover-effect effect-nine">
+		                        <p class="text-center">
+		                            Portfolio Item #9
+		                        </p>
+		                    </div>
+		                </div>
+	                </div>
+	            </div>
+	        </div>	        
+ -->	        <div class="row">
 	            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="home"> <!-- Overflow-show is used when .outer-box is used for example since it enables it to show outside the div -->
 		            <div class="well sage overflow-show large">
 		                <h1>Home</h1>
 		                <div class="outer-box">
 		                    <p>
-		                        "Groups for everyone" is an initiative in Los Altos, CA, currently led by Ildiko Ran, MFT Registered Intern to povide the community with the much needed resource of offering therapy and support groups for individuals who are looking for a safe, genuine way to find and nurture their capacity to live, love, and work in a balanced way, and feeling comfortable about themselves.
+		                        "Groups for everyone" is an initiative in Los Altos, CA, currently led by Ildiko Ran, MFT Registered Intern to povide the community with the much needed resource of offering process groups and support groups for individuals who are looking for a safe, genuine way to find and nurture their capacity to live, love, and work in a balanced way, and feeling comfortable about themselves.
 		                    </p>
 		                </div>
 		                <p>
@@ -365,111 +498,6 @@
 	                <div class="well ecru">
 	                    <p class="big"><i class="icon-quote-left"></i> Consectetur adipiscing elit. Sed ullamcorper ut lorem eu dapibus. Nullam et lobortis orci. <i class="icon-quote-right"></i></p>
 	                    <p class="big">James Doe</p>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="row">
-		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 click" id="portfolio"> <!-- using .click because its clickable #portfolio is a trigger all changable in the script.js file, no padding lets the portfolio-img be full div -->
-		        	<div class="well no-padding">
-			            <div class="portfolio-img one"> <!-- uses backstretch.js for full div effect, changable in script.js -->
-			                <div class="hover-effect effect-one">
-			                    <p class="text-center">
-			                        Portfolio Item #1
-			                    </p>
-			                </div>
-			            </div>
-		        	</div>
-		        </div>
-		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 click" id="portfolio2">
-		        	<div class="well no-padding">
-			            <div class="portfolio-img two">
-			                <div class="hover-effect effect-two">
-			                    <p class="text-center">
-			                        Portfolio Item #2
-			                    </p>
-			                </div>
-			            </div>
-		        	</div>
-		        </div>
-		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 click" id="portfolio3">
-		            <div class="well no-padding">
-			            <div class="portfolio-img three">
-			                <div class="hover-effect effect-three">
-			                    <p class="text-center">
-			                        Portfolio Item #3
-			                    </p>
-			                </div>
-			            </div>
-		            </div>
-		        </div>
-	        </div>
-	        <div class="row">
-		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio4">
-		            <div class="well no-padding">
-			            <div class="portfolio-img four">
-			                <div class="hover-effect effect-four">
-			                    <p class="text-center">
-			                        Portfolio Item #4
-			                    </p>
-			                </div>
-			            </div>
-		            </div>
-		        </div>
-		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio5">
-		            <div class="well no-padding">
-			            <div class="portfolio-img five">
-			                <div class="hover-effect effect-five">
-			                    <p class="text-center">
-			                        Portfolio Item #5
-			                    </p>
-			                </div>
-			            </div>
-		            </div>
-		        </div>
-		        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio6">
-		            <div class="well no-padding">
-			            <div class="portfolio-img six">
-			                <div class="hover-effect effect-six">
-			                    <p class="text-center">
-			                        Portfolio Item #6
-			                    </p>
-			                </div>
-			            </div>
-		            </div>
-		        </div>
-	        </div>
-	        <div class="row">
-	            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio7">
-	                <div class="well no-padding">
-		                <div class="portfolio-img seven">
-		                    <div class="hover-effect effect-seven">
-		                        <p class="text-center">
-		                            Portfolio Item #7
-		                        </p>
-		                    </div>
-		                </div>
-	                </div>
-	            </div>
-	            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio8">
-	                <div class="well no-padding">
-		                <div class="portfolio-img eight">
-		                    <div class="hover-effect effect-eight">
-		                        <p class="text-center">
-		                            Portfolio Item #8
-		                        </p>
-		                    </div>
-		                </div>
-	                </div>
-	            </div>
-	            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs click" id="portfolio9">
-	                <div class="well no-padding">
-		                <div class="portfolio-img nine">
-		                    <div class="hover-effect effect-nine">
-		                        <p class="text-center">
-		                            Portfolio Item #9
-		                        </p>
-		                    </div>
-		                </div>
 	                </div>
 	            </div>
 	        </div>

@@ -85,12 +85,14 @@ function panels() {
         });
     }); 
 	// portfolio panel
+	var portMap = { portfolio : '#gp1', portfolio2 : '#gp2', portfolio3 : '#gp2', portfolio4 : '#gp2', portfolio5 : '#gp2', portfolio6 : '#gp2'};
     $("#portfolio, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6, #portfolio7, #portfolio8, #portfolio9").on('click', function() {
+    	var pId = portMap[this.id]; //'.panel .work '+ portMap[this.id];
     	$("body").addClass("no-scroll");
         $('.panel').animate({
             'width': 'show'
         }, 1000, function() {
-            $('.panel .work').fadeIn(500);
+            $(pId).fadeIn(500);
         });
     });
     $('.closeicon').on('click', function() {
