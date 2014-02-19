@@ -85,7 +85,7 @@ function panels() {
         });
     }); 
 	// portfolio panel
-	var portMap = { portfolio : '#gp1', portfolio2 : '#gp2', portfolio3 : '#gp2', portfolio4 : '#gp2', portfolio5 : '#gp2', portfolio6 : '#gp2'};
+	var portMap = { portfolio : '#gp1', portfolio2 : '#gp2', portfolio3 : '#gp3', portfolio4 : '#gp4', portfolio5 : '#gp2', portfolio6 : '#gp2'};
     $("#portfolio, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6, #portfolio7, #portfolio8, #portfolio9").on('click', function() {
     	var pId = portMap[this.id]; //'.panel .work '+ portMap[this.id];
     	$("body").addClass("no-scroll");
@@ -127,8 +127,8 @@ function contentslider() {
 function map() {
 	new GMaps({
 		div: '#map',
-		lat: 40.71435,
-		lng: -74.00597,
+		lat: 37.37,
+		lng: -122.10,
 		scrollwheel: false
 	});
 }
