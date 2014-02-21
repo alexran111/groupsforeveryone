@@ -22,20 +22,20 @@ function menu() {
 
 
 function backstretch() { // used for fulldiv backgrounds
-	$(".bp-post").backstretch("assets/img/11.jpg");
+	$(".bp-post").backstretch("assets/img/lightrowpeople.jpg");
 	$(".photo-album").backstretch([
 		"assets/img/7.jpg", "assets/img/11.jpg", "assets/img/3.jpg"
 		], {
 		duration: 10000,
 		fade: 750
 	});
-	$(".bp-post.two").backstretch("assets/img/12.jpg");
-	$(".portfolio-img.one").backstretch("assets/img/8.jpg");
-	$(".portfolio-img.two").backstretch("assets/img/9.jpg");
-	$(".portfolio-img.three").backstretch("assets/img/10.jpg");
-	$(".portfolio-img.four").backstretch("assets/img/11.jpg");
-	$(".portfolio-img.five").backstretch("assets/img/12.jpg");
-	$(".portfolio-img.six").backstretch("assets/img/13.jpg");
+	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
+	$(".portfolio-img.one").backstretch("assets/img/parenting.jpg");
+	$(".portfolio-img.two").backstretch("assets/img/adolescents.jpg");
+	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
+	$(".portfolio-img.four").backstretch("assets/img/anger.jpg");
+	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
+	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
 	$(".portfolio-img.seven").backstretch("assets/img/14.jpg");
 	$(".portfolio-img.eight").backstretch("assets/img/15.jpg");
 	$(".portfolio-img.nine").backstretch("assets/img/16.jpg");
@@ -47,13 +47,13 @@ function backstretch() { // used for fulldiv backgrounds
 		duration: 10000,
 		fade: 750
 	});
-	$(".bp-post.two").backstretch("assets/img/12.jpg");
-	$(".portfolio-img.one").backstretch("assets/img/8.jpg");
-	$(".portfolio-img.two").backstretch("assets/img/9.jpg");
-	$(".portfolio-img.three").backstretch("assets/img/10.jpg");
-	$(".portfolio-img.four").backstretch("assets/img/11.jpg");
-	$(".portfolio-img.five").backstretch("assets/img/12.jpg");
-	$(".portfolio-img.six").backstretch("assets/img/13.jpg");
+	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
+	$(".portfolio-img.one").backstretch("assets/img/parenting.jpg");
+	$(".portfolio-img.two").backstretch("assets/img/adolescents.jpg");
+	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
+	$(".portfolio-img.four").backstretch("assets/img/anger.jpg");
+	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
+	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
 	$(".portfolio-img.seven").backstretch("assets/img/14.jpg");
 	$(".portfolio-img.eight").backstretch("assets/img/15.jpg");
 	$(".portfolio-img.nine").backstretch("assets/img/16.jpg");
@@ -85,7 +85,7 @@ function panels() {
         });
     }); 
 	// portfolio panel
-	var portMap = { portfolio : '#gp1', portfolio2 : '#gp2', portfolio3 : '#gp3', portfolio4 : '#gp4', portfolio5 : '#gp2', portfolio6 : '#gp2'};
+	var portMap = { portfolio : '#gp1', portfolio2 : '#gp2', portfolio3 : '#gp3', portfolio4 : '#gp4', portfolio5 : '#gp5', portfolio6 : '#gp6'};
     $("#portfolio, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6, #portfolio7, #portfolio8, #portfolio9").on('click', function() {
     	var pId = portMap[this.id]; //'.panel .work '+ portMap[this.id];
     	$("body").addClass("no-scroll");
