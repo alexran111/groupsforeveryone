@@ -30,8 +30,8 @@ function backstretch() { // used for fulldiv backgrounds
 		fade: 750
 	});
 	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
-	$(".portfolio-img.one").backstretch("assets/img/parenting.jpg");
-	$(".portfolio-img.two").backstretch("assets/img/adolescents.jpg");
+	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
+	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
 	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
 	$(".portfolio-img.four").backstretch("assets/img/anger.jpg");
 	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
@@ -48,8 +48,8 @@ function backstretch() { // used for fulldiv backgrounds
 		fade: 750
 	});
 	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
-	$(".portfolio-img.one").backstretch("assets/img/parenting.jpg");
-	$(".portfolio-img.two").backstretch("assets/img/adolescents.jpg");
+	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
+	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
 	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
 	$(".portfolio-img.four").backstretch("assets/img/anger.jpg");
 	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
