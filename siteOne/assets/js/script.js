@@ -24,7 +24,7 @@ function menu() {
 function backstretch() { // used for fulldiv backgrounds
 	$(".bp-post").backstretch("assets/img/lightrowpeople.jpg");
 	$(".photo-album").backstretch([
-		"assets/img/7.jpg", "assets/img/11.jpg", "assets/img/3.jpg"
+		"assets/img/rainbowpeople.jpg", "assets/img/sculpturegroup.jpg"
 		], {
 		duration: 10000,
 		fade: 750
@@ -36,13 +36,10 @@ function backstretch() { // used for fulldiv backgrounds
 	$(".portfolio-img.four").backstretch("assets/img/anger.jpg");
 	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
 	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
-	$(".portfolio-img.seven").backstretch("assets/img/14.jpg");
-	$(".portfolio-img.eight").backstretch("assets/img/15.jpg");
-	$(".portfolio-img.nine").backstretch("assets/img/16.jpg");
     $(window).resize(function () {
-	$(".bp-post").backstretch("assets/img/11.jpg");
+	$(".bp-post").backstretch("assets/img/lightrowpeople.jpg");
 	$(".photo-album").backstretch([
-		"assets/img/7.jpg", "assets/img/11.jpg", "assets/img/3.jpg"
+		"assets/img/rainbowpeople.jpg", "assets/img/sculpturegroup.jpg"
 		], {
 		duration: 10000,
 		fade: 750
@@ -54,9 +51,6 @@ function backstretch() { // used for fulldiv backgrounds
 	$(".portfolio-img.four").backstretch("assets/img/anger.jpg");
 	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
 	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
-	$(".portfolio-img.seven").backstretch("assets/img/14.jpg");
-	$(".portfolio-img.eight").backstretch("assets/img/15.jpg");
-	$(".portfolio-img.nine").backstretch("assets/img/16.jpg");
     });
 }
 
