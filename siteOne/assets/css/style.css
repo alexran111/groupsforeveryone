@@ -389,6 +389,7 @@ margin: 0 0 0;
 	font-weight: 300;
 	font-size: 25px;
 	text-align: center;
+	color: #863538;
 	position: absolute;
 	top:0;
     bottom:0;
@@ -780,30 +781,30 @@ input[placeholder], [placeholder], *[placeholder] { color: #fff !important; }
 .imagebg-9,
 .imagebg-8,
 .imagebg-7,
-.imagebg-6,
-.imagebg-5,
-.imagebg-4,
-.imagebg-3,
-.imagebg-2,
-.imagebg-1 {
+.supportgroup-bg,
+.sadwoman-bg,
+.parenting-bg,
+.collegestudentcircle-bg,
+.adolescents-bg,
+.sculpturegroup-bg {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
   
-.imagebg-1 { background: url('../img/sculpturegroup.jpg') no-repeat center bottom; }
+.sculpturegroup-bg { background: #00B4CC url('../img/sculpturegroup.jpg') no-repeat center bottom; }
 
-.imagebg-2 { background: #00B4CC url('../img/card.png') no-repeat center bottom; }
+.adolescents-bg { background: #00B4CC url('../img/adolescents.jpg') no-repeat center top; }
 
-.imagebg-3 { background: #323232 url('../img/3.jpg') no-repeat center bottom; }
+.anger-bg { background: #323232 url('../img/anger.jpg') no-repeat center bottom; }
 
-.imagebg-4 { background: #323232 url('../img/14.jpg') no-repeat center bottom; }
+.collegestudentcircle-bg { background: #323232 url('../img/collegestudentcircle.jpg') no-repeat center top; }
 
-.imagebg-5 { background: #323232 url('../img/5.jpg') no-repeat center bottom; }
+.parenting-bg { background: #323232 url('../img/parenting.jpg') no-repeat center top; }
 
-.imagebg-6 { background: #323232 url('../img/6.jpg') no-repeat center bottom; }
+.sadwoman-bg { background: #323232 url('../img/sadwoman.jpg') no-repeat center top; }
 
-.imagebg-7 { background: #323232 url('../img/7.jpg') no-repeat center bottom; }
+.supportgroup-bg { background: #323232 url('../img/supportgroup.jpg') no-repeat center top; }
 
 .imagebg-8 { background: #323232 url('../img/8.jpg') no-repeat center bottom; }
 
