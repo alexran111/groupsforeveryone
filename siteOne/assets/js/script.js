@@ -61,13 +61,13 @@ function slider() {
 }
 
 function panels() {
-	// album panel
+/*	// album panel
     $('#album').on('click', function() {
     	$("body").addClass("no-scroll");
         $('.panel').animate({
             'width': 'show'
         }, 1000, function() {
-            $('.panel .album').fadeIn(500);
+            $('#links').fadeIn(500);
         });
     });
     $('i.closeicon').on('click', function() {
@@ -77,16 +77,16 @@ function panels() {
                 'width': 'hide'
             }, 1000);
         });
-    }); 
+    }); */
 	// portfolio panel
-	var portMap = { portfolio : '#gp1', portfolio2 : '#gp2', portfolio3 : '#gp3', portfolio4 : '#gp4', portfolio5 : '#gp5', portfolio6 : '#gp6'};
-    $("#portfolio, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6, #portfolio7, #portfolio8, #portfolio9").on('click', function() {
+	var portMap = { links : '#links-panel', portfolio : '#gp1', portfolio2 : '#gp2', portfolio3 : '#gp3', portfolio4 : '#gp4', portfolio5 : '#gp5', portfolio6 : '#gp6'};
+    $("#links, #portfolio, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6, #portfolio7, #portfolio8, #portfolio9").on('click', function() {
     	var pId = portMap[this.id]; //'.panel .work '+ portMap[this.id];
     	$("body").addClass("no-scroll");
         $('.panel').animate({
             'width': 'show'
         }, 1000, function() {
-            $(pId).fadeIn(500);
+            $('.panel ' + pId).fadeIn(500);
         });
     });
     $('.closeicon').on('click', function() {
