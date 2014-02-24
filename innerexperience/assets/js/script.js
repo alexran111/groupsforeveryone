@@ -29,6 +29,12 @@ function backstretch() { // used for fulldiv backgrounds
 		duration: 10000,
 		fade: 750
 	});
+	$(".links").backstretch([
+		"assets/img/sculpturegroup.jpg", "assets/img/rainbowpeople.jpg"
+		], {
+		duration: 10000,
+		fade: 750
+	});
 	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
 	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
 	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
@@ -40,6 +46,12 @@ function backstretch() { // used for fulldiv backgrounds
 	$(".bp-post").backstretch("assets/img/asilomar.jpg");
 	$(".photo-album").backstretch([
 		"assets/img/writinghand.jpg", "assets/img/therapistcouplesissue.jpg"
+		], {
+		duration: 10000,
+		fade: 750
+	});
+	$(".links").backstretch([
+		"assets/img/sculpturegroup.jpg", "assets/img/rainbowpeople.jpg"
 		], {
 		duration: 10000,
 		fade: 750
