@@ -80,7 +80,7 @@ function panels() {
     }); */
 	// portfolio panel
 	var portMap = { links : '#links-panel', portfolio : '#gp1', portfolio2 : '#gp2', portfolio3 : '#gp3', portfolio4 : '#gp4', portfolio5 : '#gp5', portfolio6 : '#gp6'};
-    $("#links, #portfolio, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6, #portfolio7, #portfolio8, #portfolio9").on('click', function() {
+    $("#links, #portfolio, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6").on('click', function() {
     	var pId = portMap[this.id]; //'.panel .work '+ portMap[this.id];
     	$("body").addClass("no-scroll");
         $('.panel').animate({

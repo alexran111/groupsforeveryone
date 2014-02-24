@@ -63,7 +63,7 @@ function slider() {
 function panels() {
 	// work panels
 	var portMap = { links : '#links-panel', articles : '#articles-panel'};
-    $('#links', '#articles').on('click', function() {
+    $('#links, #articles').on('click', function() {
     	var pId = portMap[this.id]; //'.panel .work '+ portMap[this.id];
     	$("body").addClass("no-scroll");
         $('.panel').animate({
@@ -85,11 +85,12 @@ function panels() {
 function blogposts() { // only use if span is at the end of the row 
 	$("#blogone").click(function(){
 		$(".blog-post-item.one").toggleClass("reveal");
-		$(".blog-post-item.two").removeClass("reveal"); // you dont have to add this line
 	});
 	$("#blogtwo").click(function(){
 		$(".blog-post-item.two").toggleClass("reveal");
-		$(".blog-post-item.one").removeClass("reveal"); // you dont have to add this line
+	});
+	$("#blogthree").click(function(){
+		$(".blog-post-item.three").toggleClass("reveal");
 	});  
 }
 
