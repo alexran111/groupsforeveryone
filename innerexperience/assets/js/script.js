@@ -22,7 +22,7 @@ function menu() {
 
 
 function backstretch() { // used for fulldiv backgrounds
-	$(".bp-post").backstretch("assets/img/asilomar.jpg");
+	$(".bp-post").backstretch("assets/img/desk.jpg");
 	$(".photo-album").backstretch([
 		"assets/img/writinghand.jpg", "assets/img/therapistcoupleissue.jpg"
 		], {
@@ -30,7 +30,7 @@ function backstretch() { // used for fulldiv backgrounds
 		fade: 750
 	});
 	$(".links").backstretch([
-		"assets/img/sculpturegroup.jpg", "assets/img/rainbowpeople.jpg"
+		"assets/img/fishjump.jpg", "assets/img/rainbowpeople.jpg"
 		], {
 		duration: 10000,
 		fade: 750
@@ -43,7 +43,7 @@ function backstretch() { // used for fulldiv backgrounds
 	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
 	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
     $(window).resize(function () {
-	$(".bp-post").backstretch("assets/img/asilomar.jpg");
+	$(".bp-post").backstretch("assets/img/desk.jpg");
 	$(".photo-album").backstretch([
 		"assets/img/writinghand.jpg", "assets/img/therapistcouplesissue.jpg"
 		], {
