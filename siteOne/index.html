@@ -475,11 +475,14 @@
     		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 large">
     			<div class="blueberry well overflow-show large" id="contact">
     				<h1>Contact us</h1>
-    				<form id="tab" name="contactForm" method="post" action=sendContactForm.php>
+    				<form id="tab" name="contactForm" method="post" action="formmail.php">
     					<div class="outer-box">
-    						<input type="text" name="first_name" placeholder="First Name" value="" class="input-block-level bordered-input">
+    						<input type="hidden" name="recipients" value="ildikoran@gmail.com" />
+    						<input type="hidden" name="required" value="EmailAddr:Your email address,FirstName:Your name" />
+    						<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FirstName" />
+    						<input type="text" name="FirstName" placeholder="First Name" value="" class="input-block-level bordered-input">
     						<input type="text" name="last_name" placeholder="Last Name" value="" class="input-block-level bordered-input">
-    						<input type="text" name="email_from" placeholder="Email" value="" class="input-block-level bordered-input">
+    						<input type="text" name="EmailAddr" placeholder="Email" value="" class="input-block-level bordered-input">
     						<input type="text" name="subject" placeholder="Subject" value="" class="input-block-level bordered-input">
     						<textarea name="message" placeholder="Message" rows="3" class="input-block-level bordered-input"></textarea>
     						<button type="submit" class="btn transparent btn-large pull-right">SEND</button>
