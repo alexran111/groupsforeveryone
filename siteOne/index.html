@@ -40,13 +40,31 @@
 	<div class="panel"> <!--Panels for content -->
 		<div class="work" id="links-panel"> <!-- Album panel -->
 			<span class="closeicon"><i class="icon-remove"></i></span>
-			<div class="row">
-				<ul>
-					<a href="http://agpa.org"><img src="assets/img/rainbowpeople.jpg"/>
-					Americant Group Phsychotherapy Association</a>
-					<a href="http://aagt.org"><img src="assets/img/sculpturegroup.jpg"/>
-					Association for the Advancement of Gestalt Therapy</a>
-				</ul>
+			<div class="row reference">
+				<div class="col-sm-3 col-md-2 col-lg-2 hidden-xs">
+					<img src="assets/img/therapistcouplesissue.jpg" width="100%"/>
+				</div>
+				<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10">
+					<p>An article Ildiko wrote for The Therapist, California's MFT magazine, about her experiences in the MOMS program, a group therapy based intensive outpatient program for those struggling with perinatal mood disorders, mostly post partum depression. Ildiko lead groups for the mothers who were patients at the hospital and was instrumental in starting weekly groups for the partners of the mothers. <a href="assets/img/couplesarticle.pdf"> Read the article here</a></p>
+				</div>
+			</div>
+			<hr/>
+			<div class="row reference">
+				<div class="col-sm-3 col-md-2 col-lg-2 hidden-xs">
+					<img src="assets/img/acs_teen_logo.jpg" width="100%"/>
+				</div>
+				<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10">
+					<p>A short reflection from the time Ildiko worked at a counseling center for high schoolers <a href="http://acsteens.wordpress.com/2012/02/13/from-the-inside-life-as-an-acs-intern/">Adolescent Counseling Services blog entry</a></p>
+				</div>
+			</div>
+			<hr/>
+			<div class="row reference">
+				<div class="col-sm-3 col-md-2 col-lg-2 hidden-xs">
+					<img src="assets/img/writinghand.jpg" width="100%"/>
+				</div>
+				<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10">
+					<p>Academic paper on process group therapy <a href="assets/img/AnalyticArticle5000words.pdf"> Read here</a></p>
+				</div>
 			</div>
 		</div>
 		<div class="work" id="gp1"> <!-- Group panel 1 -->
@@ -57,35 +75,23 @@
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="well purple fixed-height">
-						<h2>Adolescents</h2>
+						<h2>Interpersonal effectiveness &</h2>
+						<h2>Emotion regulation</h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="well plum fluid-height overflow-show">
-						<h1>Increase interpersonal effectiveness</h1>
-						<p>
-							For adolescents struggling with academic pressure and social demands.
-						</p>
+						<h1>This group is for adolescents struggling with academic pressure and social demands.</h1>
 						<p>Participating in these groups can be used as an adjunct to the teen’s individual treatment or as a step down from an inpatient or IOP level of care. In some cases participation in group might be appropriate as the sole psychotherapeutic intervention.
 						</p>
 						<div class="outer-box-work">
-							<p>The style of these psychotherapy groups is interpersonally oriented, using Mindfulness and CBT skills. 
-								We focus on individual goals while growing self-awareness and interpersonal effectiveness.
-								Participants gain insight into their relationship styles and explore and increase their self-efficacy.
-							</p>
+							<p>The style of these psychotherapy groups is interpersonally oriented, using Mindfulness and CBT skills.</p>
+							<p>We focus on individual goals while growing self-awareness and interpersonal effectiveness.</p>
 						</div>
 						<p class="big">
-							Goals: 
-							- Increased ability to handle stressful situations 
-							- Staying mindful in the midst of anxiety 
-							- Better understand one's own automatic reactions and learn to find new, healthier coping skills
-							Benefits: 
-							In a group environment you can work out your personal psychological issues in the safety of the therapeutic environment among your peers 
-							Transition from the lessons you learn from the therapeutic interventions will be easier to translate to real life than from individual therapy 
-							If you also attend individual sessions, this modality will enhance the effectiveness or serve as a bumper zone between the therapy setting and  real life 
-							The group environment facilitates utilization of skills learned from group as well as individual therapy
+							In a group environment teens can work out their personal psychological issues in the safety of the therapeutic environment among their peers
 						</p>
 					</div>
 				</div>
@@ -437,7 +443,7 @@
     			<div class="well no-padding fixed-height click" id="links">
     				<div class="photo-album">
     					<div class="album">
-    						<div class="title">Links</div>
+    						<div class="title">Articles</div>
     					</div>
     				</div>
     			</div>
@@ -475,11 +481,14 @@
     		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 large">
     			<div class="blueberry well overflow-show large" id="contact">
     				<h1>Contact us</h1>
-    				<form id="tab" name="contactForm" method="post" action=sendContactForm.php>
+    				<form id="tab" name="contactForm" method="post" action="formmail.php">
     					<div class="outer-box">
-    						<input type="text" name="first_name" placeholder="First Name" value="" class="input-block-level bordered-input">
+    						<input type="hidden" name="recipients" value="ildikoran@gmail.com" />
+    						<input type="hidden" name="required" value="EmailAddr:Your email address,FirstName:Your name" />
+    						<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FirstName" />
+    						<input type="text" name="FirstName" placeholder="First Name" value="" class="input-block-level bordered-input">
     						<input type="text" name="last_name" placeholder="Last Name" value="" class="input-block-level bordered-input">
-    						<input type="text" name="email_from" placeholder="Email" value="" class="input-block-level bordered-input">
+    						<input type="text" name="EmailAddr" placeholder="Email" value="" class="input-block-level bordered-input">
     						<input type="text" name="subject" placeholder="Subject" value="" class="input-block-level bordered-input">
     						<textarea name="message" placeholder="Message" rows="3" class="input-block-level bordered-input"></textarea>
     						<button type="submit" class="btn transparent btn-large pull-right">SEND</button>
