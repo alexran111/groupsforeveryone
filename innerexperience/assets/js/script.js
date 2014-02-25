@@ -23,18 +23,6 @@ function menu() {
 
 function backstretch() { // used for fulldiv backgrounds
 	$(".bp-post").backstretch("assets/img/asilomar.jpg");
-	$(".photo-album").backstretch([
-		"assets/img/writinghand.jpg", "assets/img/therapistcoupleissue.jpg"
-		], {
-		duration: 10000,
-		fade: 750
-	});
-	$(".links").backstretch([
-		"assets/img/sculpturegroup.jpg", "assets/img/rainbowpeople.jpg"
-		], {
-		duration: 10000,
-		fade: 750
-	});
 	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
 	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
 	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
@@ -44,18 +32,6 @@ function backstretch() { // used for fulldiv backgrounds
 	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
     $(window).resize(function () {
 	$(".bp-post").backstretch("assets/img/asilomar.jpg");
-	$(".photo-album").backstretch([
-		"assets/img/writinghand.jpg", "assets/img/therapistcouplesissue.jpg"
-		], {
-		duration: 10000,
-		fade: 750
-	});
-	$(".links").backstretch([
-		"assets/img/sculpturegroup.jpg", "assets/img/rainbowpeople.jpg"
-		], {
-		duration: 10000,
-		fade: 750
-	});
 	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
 	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
 	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
@@ -95,14 +71,14 @@ function panels() {
 }
 
 function blogposts() { // only use if span is at the end of the row 
-	$("#blogone").click(function(){
-		$(".blog-post-item.one").toggleClass("reveal");
+	$("#approach").click(function(){
+		$("#approach-item").toggleClass("reveal");
 	});
-	$("#blogtwo").click(function(){
-		$(".blog-post-item.two").toggleClass("reveal");
+	$("#appointments").click(function(){
+		$("#appointments-item").toggleClass("reveal");
 	});
-	$("#blogthree").click(function(){
-		$(".blog-post-item.three").toggleClass("reveal");
+	$("#resources").click(function(){
+		$("#resources-item").toggleClass("reveal");
 	});  
 }
 
