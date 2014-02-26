@@ -118,6 +118,18 @@ function contentslider() {
 	});
 }
 
+function processForm(formId) { 
+    //your validation code
+    $.ajax( {
+        type: 'POST',
+        url: 'formmail.php',
+        data: $(formId).serialize(), 
+        success: function(data) {
+        	alert(data);
+        }
+    } );
+}
+
 function map() {
 	new GMaps({
 		div: '#map',
