@@ -50,7 +50,7 @@ function slider() {
 
 function panels() {
 	// work panels
-	var portMap = { links : '#links-panel', articles : '#articles-panel'};
+	var portMap = {articles : '#articles-panel'};  //  links : '#links-panel', 
     $('#links, #articles').on('click', function() {
     	var pId = portMap[this.id]; //'.panel .work '+ portMap[this.id];
     	$("body").addClass("no-scroll");

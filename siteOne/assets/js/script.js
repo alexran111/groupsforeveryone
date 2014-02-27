@@ -23,13 +23,8 @@ function menu() {
 
 function backstretch() { // used for fulldiv backgrounds
 	$(".bp-post").backstretch("assets/img/lightrowpeople.jpg");
-	$(".photo-album").backstretch([
-		"assets/img/rainbowpeople.jpg", "assets/img/sculpturegroup.jpg"
-		], {
-		duration: 10000,
-		fade: 750
-	});
-	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
+	$(".album").backstretch("assets/img/rainbowpeople.jpg");
+	$(".bp-post.two").backstretch("assets/img/magazineslong.jpg");
 	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
 	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
 	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
@@ -38,13 +33,8 @@ function backstretch() { // used for fulldiv backgrounds
 	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
     $(window).resize(function () {
 	$(".bp-post").backstretch("assets/img/lightrowpeople.jpg");
-	$(".photo-album").backstretch([
-		"assets/img/rainbowpeople.jpg", "assets/img/sculpturegroup.jpg"
-		], {
-		duration: 10000,
-		fade: 750
-	});
-	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
+	$(".album").backstretch("assets/img/rainbowpeople.jpg");
+	$(".bp-post.two").backstretch("assets/img/magazineslong.jpg");
 	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
 	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
 	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
