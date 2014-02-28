@@ -90,6 +90,21 @@ function contentslider() {
 	});
 }
 
+$("#contactForm").validate({submitHandler: function (form) {
+	var $form = $(form);
+	$form.children('input').disable();
+    $.ajax( {
+        type: 'POST',
+        url: 'formmail.php',
+        data: $form.serialize(), 
+        success: function(response) {
+        	//$form.children('input').val('');
+        	alert(response);
+        }
+    } );
+}
+});
+
 function map() {
 	new GMaps({
 		div: '#map',

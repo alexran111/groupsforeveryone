@@ -108,17 +108,21 @@ function contentslider() {
 	});
 }
 
-function processForm(formId) { 
-    //your validation code
+
+$("#contactForm").validate({submitHandler: function (form) {
+	var $form = $(form);
+	$form.children('input').disable();
     $.ajax( {
         type: 'POST',
         url: 'formmail.php',
-        data: $(formId).serialize(), 
-        success: function(data) {
-        	alert(data);
+        data: $form.serialize(), 
+        success: function(response) {
+        	$form.children('input').val('');
+        	alert(response);
         }
-    } );
+    } );	
 }
+});
 
 function map() {
 	new GMaps({
