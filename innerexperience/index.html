@@ -323,10 +323,9 @@
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 large">
 				<div class="blueberry well overflow-show large" id="contact">
 					<h1>Contact us</h1>
-					<form id="contactForm" name="contactForm" method="post" action="">
+					<form id="contactForm" method="POST" name="contactForm">
 						<fieldset>
 							<div class="outer-box">
-							    <input type="hidden" name="recipients" value="ildikoran@gmail.com" />
 								<input type="text" id = "cname" name="name" placeholder="Your name" minlength="2" required class="input-block-level bordered-input">
 	      						<!-- <label for="cemail">E-Mail (required)</label> -->
 	      						<input type="email" name="email" id="cemail" placeholder="Your E-mail" required class="input-block-level bordered-input">
@@ -362,6 +361,7 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<script src="//www.parsecdn.com/js/parse-1.2.17.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="assets/js/jquery.validate.min.js"></script>
 	<script src="assets/js/jquery.flexslider-min.js"></script>

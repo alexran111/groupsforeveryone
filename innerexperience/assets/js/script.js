@@ -1,3 +1,28 @@
+
+$( document ).ready(function() {
+	Parse.initialize("wCeNDBYci7x31bs0yDRTOHHzUKeRpVAYNmaM6xR5", "NpqqgRHe91ygiGpRiqfjMEy4wWwICbe3GwDlJr2F");
+	$("#contactForm").validate({submitHandler: function (form) {
+		var $form = $(form);
+		var ContactRequest = Parse.Object.extend("ContactRequest");
+		var cr = new ContactRequest();
+		cr.set("data", $form.serialize());
+		cr.save(null, {
+	        success: function(cr) {
+	        	$form.find("input, textarea").val("");
+	        	$form.append('<p>Thank you. We will contact you soon.</p>')
+	        },
+	        error: function(cr) {
+	        	alert("Oops. We could not deliver your request. Please try again later.");
+	        }
+		});
+	}});
+});
+
+$( document ).ready(function() {
+	Parse.initialize("wCeNDBYci7x31bs0yDRTOHHzUKeRpVAYNmaM6xR5", "NpqqgRHe91ygiGpRiqfjMEy4wWwICbe3GwDlJr2F");
+	$("#contactForm").validate();
+});
+
 function menu() {
 	$(".menu,.nav .home,.nav .about,.nav .groups,.nav .contact ").click(function(){
 		$(".nav-section").toggleClass("show");
@@ -90,20 +115,6 @@ function contentslider() {
 	});
 }
 
-$("#contactForm").validate({submitHandler: function (form) {
-	var $form = $(form);
-	$form.children('input').disable();
-    $.ajax( {
-        type: 'POST',
-        url: 'formmail.php',
-        data: $form.serialize(), 
-        success: function(response) {
-        	//$form.children('input').val('');
-        	alert(response);
-        }
-    } );
-}
-});
 
 function map() {
 	new GMaps({
