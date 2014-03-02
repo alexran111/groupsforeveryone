@@ -6,6 +6,7 @@ $( document ).ready(function() {
 		var ContactRequest = Parse.Object.extend("ContactRequest");
 		var cr = new ContactRequest();
 		cr.set("data", $form.serialize());
+		ga('send', 'event', 'form', 'submit');
 		cr.save(null, {
 	        success: function(cr) {
 	        	$form.find("input, textarea").val("");
@@ -84,6 +85,7 @@ function panels() {
         }, 1000, function() {
             $(pId).fadeIn(500);
         });
+    	ga('send', 'event', 'panel', 'enter', pId);
     });
     $('.closeicon').on('click', function() {
         $('.panel .work').fadeOut(500, function() {
@@ -98,12 +100,15 @@ function panels() {
 function blogposts() { // only use if span is at the end of the row 
 	$("#approach").click(function(){
 		$("#approach-item").toggleClass("reveal");
+		ga('send', 'event', 'topic', 'open', 'approach');
 	});
 	$("#appointments").click(function(){
 		$("#appointments-item").toggleClass("reveal");
+		ga('send', 'event', 'topic', 'open', 'appointments');
 	});
 	$("#resources").click(function(){
 		$("#resources-item").toggleClass("reveal");
+		ga('send', 'event', 'topic', 'open', 'resources');
 	});  
 }
 
