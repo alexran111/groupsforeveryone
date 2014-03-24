@@ -1,3 +1,29 @@
+
+$( document ).ready(function() {
+	Parse.initialize("wCeNDBYci7x31bs0yDRTOHHzUKeRpVAYNmaM6xR5", "NpqqgRHe91ygiGpRiqfjMEy4wWwICbe3GwDlJr2F");
+	$("#contactForm").validate({submitHandler: function (form) {
+		var $form = $(form);
+		var ContactRequest = Parse.Object.extend("ContactRequest");
+		var cr = new ContactRequest();
+		cr.set("data", $form.serialize());
+		ga('send', 'event', 'form', 'submit');
+		cr.save(null, {
+	        success: function(cr) {
+	        	$form.find("input, textarea").val("");
+	        	$form.append('<p>Thank you. We will contact you soon.</p>')
+	        },
+	        error: function(cr) {
+	        	alert("Oops. We could not deliver your request. Please try again later.");
+	        }
+		});
+	}});
+});
+
+$( document ).ready(function() {
+	Parse.initialize("wCeNDBYci7x31bs0yDRTOHHzUKeRpVAYNmaM6xR5", "NpqqgRHe91ygiGpRiqfjMEy4wWwICbe3GwDlJr2F");
+	$("#contactForm").validate();
+});
+
 function menu() {
 	$(".menu,.nav .home,.nav .about,.nav .groups,.nav .contact ").click(function(){
 		$(".nav-section").toggleClass("show");
@@ -59,6 +85,7 @@ function panels() {
         }, 1000, function() {
             $(pId).fadeIn(500);
         });
+    	ga('send', 'event', 'panel', 'enter', pId);
     });
     $('.closeicon').on('click', function() {
         $('.panel .work').fadeOut(500, function() {
@@ -73,12 +100,15 @@ function panels() {
 function blogposts() { // only use if span is at the end of the row 
 	$("#approach").click(function(){
 		$("#approach-item").toggleClass("reveal");
+		ga('send', 'event', 'topic', 'open', 'approach');
 	});
 	$("#appointments").click(function(){
 		$("#appointments-item").toggleClass("reveal");
+		ga('send', 'event', 'topic', 'open', 'appointments');
 	});
 	$("#resources").click(function(){
 		$("#resources-item").toggleClass("reveal");
+		ga('send', 'event', 'topic', 'open', 'resources');
 	});  
 }
 
@@ -89,6 +119,7 @@ function contentslider() {
 		directionNav: false
 	});
 }
+
 
 function map() {
 	new GMaps({
