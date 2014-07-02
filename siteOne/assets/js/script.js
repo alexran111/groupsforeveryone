@@ -1,4 +1,3 @@
-
 $( document ).ready(function() {
 	Parse.initialize("wCeNDBYci7x31bs0yDRTOHHzUKeRpVAYNmaM6xR5", "NpqqgRHe91ygiGpRiqfjMEy4wWwICbe3GwDlJr2F");
 	$("#contactForm").validate({submitHandler: function (form) {
@@ -17,11 +16,6 @@ $( document ).ready(function() {
 	        }
 		});
 	}});
-});
-
-$( document ).ready(function() {
-	Parse.initialize("wCeNDBYci7x31bs0yDRTOHHzUKeRpVAYNmaM6xR5", "NpqqgRHe91ygiGpRiqfjMEy4wWwICbe3GwDlJr2F");
-	$("#contactForm").validate();
 });
 
 function menu() {
@@ -48,8 +42,9 @@ function menu() {
 
 
 function backstretch() { // used for fulldiv backgrounds
-	$(".bp-post").backstretch("assets/img/asilomar.jpg");
-	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
+	$(".bp-post").backstretch("assets/img/lightrowpeople.jpg");
+	$(".album").backstretch("assets/img/rainbowpeople.jpg");
+	$(".bp-post.two").backstretch("assets/img/magazineslong.jpg");
 	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
 	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
 	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
@@ -57,8 +52,9 @@ function backstretch() { // used for fulldiv backgrounds
 	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
 	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
     $(window).resize(function () {
-	$(".bp-post").backstretch("assets/img/asilomar.jpg");
-	$(".bp-post.two").backstretch("assets/img/collegestudentcircle.jpg");
+	$(".bp-post").backstretch("assets/img/lightrowpeople.jpg");
+	$(".album").backstretch("assets/img/rainbowpeople.jpg");
+	$(".bp-post.two").backstretch("assets/img/magazineslong.jpg");
 	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
 	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
 	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
@@ -75,17 +71,17 @@ function slider() {
 }
 
 function panels() {
-	// work panels
-	var portMap = {articles : '#articles-panel'};  //  links : '#links-panel', 
-    $('#links, #articles').on('click', function() {
+	// portfolio panel
+	var portMap = { links : '#links-panel', portfolio : '#gp1', portfolio2 : '#gp2', portfolio3 : '#gp3', portfolio4 : '#gp4', portfolio5 : '#gp5', portfolio6 : '#gp6'};
+    $("#links, #portfolio, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6").on('click', function() {
     	var pId = portMap[this.id]; //'.panel .work '+ portMap[this.id];
     	$("body").addClass("no-scroll");
         $('.panel').animate({
             'width': 'show'
         }, 1000, function() {
-            $(pId).fadeIn(500);
+            $('.panel ' + pId).fadeIn(500);
         });
-    	ga('send', 'event', 'panel', 'enter', pId);
+        ga('send', 'event', 'panel', 'enter', pId);
     });
     $('.closeicon').on('click', function() {
         $('.panel .work').fadeOut(500, function() {
@@ -98,17 +94,16 @@ function panels() {
 }
 
 function blogposts() { // only use if span is at the end of the row 
-	$("#approach").click(function(){
-		$("#approach-item").toggleClass("reveal");
-		ga('send', 'event', 'topic', 'open', 'approach');
+	$("#blogone").click(function(){
+		$(".blog-post-item.one").toggleClass("reveal");
+		$(".blog-post-item.two").removeClass("reveal"); // you dont have to add this line
+		ga('send', 'event', 'topic', 'open', 'generalInfo');
 	});
-	$("#appointments").click(function(){
-		$("#appointments-item").toggleClass("reveal");
-		ga('send', 'event', 'topic', 'open', 'appointments');
-	});
-	$("#resources").click(function(){
-		$("#resources-item").toggleClass("reveal");
-		ga('send', 'event', 'topic', 'open', 'resources');
+	$("#blogtwo").click(function(){
+		$(".blog-post-item.two").toggleClass("reveal");
+		$(".blog-post-item.one").removeClass("reveal"); // you dont have to add this line
+		ga('send', 'event', 'topic', 'open', 'articles');
+
 	});  
 }
 
@@ -119,7 +114,6 @@ function contentslider() {
 		directionNav: false
 	});
 }
-
 
 function map() {
 	new GMaps({
