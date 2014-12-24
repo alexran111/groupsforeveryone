@@ -1,5 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:700,300,100);
-@import url(../fontawesome/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700|Lora);
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);
+
 html {
 	-webkit-font-smoothing: antialiased;
 }
@@ -47,6 +48,12 @@ form {
 margin: 0 0 0;
 }
 
+h1, h2, h3 {
+font-family: 'Old Standard TT', 'Times New Roman', sans-serif;
+font-weight: 400;
+line-height: 1.5em;
+}
+
 /* for highlights */
 ::selection {
 	background: #000; /* Safari */
@@ -69,7 +76,7 @@ margin: 0 0 0;
 	border: 0;
 	overflow: hidden;
 	position: relative;
-	height: 300px;	
+	/*height: 500px;	Supposed to be overridden? -Beni*/
 	z-index: 1; /* Fix bug on webkit browsers */ }
 	
 .large { height: 620px; } /* Used for main content such as home, about, work and contact */
@@ -201,9 +208,9 @@ margin: 0 0 0;
 
 .bold { font-weight: 700; }
 
-.copy { /* Used copyright section */
-	position: absolute;
-	bottom: 0; }
+.copy { /* Used copyright section -- Turned off */
+	/*position: absolute;
+	bottom: 0;*/ }
 	
 .col-xs-1, 
 .col-xs-2, 
@@ -280,6 +287,10 @@ margin: 0 0 0;
 	width: 100%; 
 	height: 300px; 
 	position: relative; }
+
+.bp-post:hover .title {
+	color: #ccc;
+}
 	
 .bp-post .overlay { 
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -367,6 +378,7 @@ margin: 0 0 0;
 .arrow-up.right { right: 32%; } /* Used for span8 blog post on right */
 
 
+
 /*------------- Album Styles -------------*/
 
 /* Photo album block */
@@ -391,7 +403,7 @@ margin: 0 0 0;
 .photo-album .album .title {
 	width: 130px;
 	height: 30px;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 25px;
 	text-align: center;
 	color: #863538;
@@ -412,6 +424,10 @@ margin: 0 0 0;
 	width: 100%; 
 	height: 300px; 
 	position: relative; }
+/* Fix bug in .well definition above (height --> 500px) 
+.click .well {
+	height: auto;
+}*/
 
 .portfolio-img .hover-effect	{ 
 	width: 100%; 
@@ -669,6 +685,13 @@ margin: 0 0 0;
 	position: relative;
 	height: 300px; }
 
+.person-square2 { 
+	background: #323232 url('../img/ildiko.jpg');
+	background-size: contain !important;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* You can use this method or backstrech.js e.g the portfolio blocks */
 .person-square { background: #323232 url('../img/asilomar.jpg') no-repeat center center; }
 .person-square2 { background: #323232 url('../img/ildiko.jpg') no-repeat center center; }
@@ -748,7 +771,7 @@ input[placeholder], [placeholder], *[placeholder] { color: #fff !important; }
 .panel .work, /* Add the panels you use here */
 .panel .album {
 	display:none;
-	font-family:arial;
+	font-family: Lato;
 	color:white;
 	height: 100%;
 	font-weight: 100;
@@ -787,7 +810,7 @@ input[placeholder], [placeholder], *[placeholder] { color: #fff !important; }
 .imagebg-8,
 .imagebg-7,
 .supportgroup-bg,
-.sadwoman-bg,
+.processgroup-bg,
 .parenting-bg,
 .collegestudentcircle-bg,
 .adolescents-bg,
@@ -801,13 +824,15 @@ input[placeholder], [placeholder], *[placeholder] { color: #fff !important; }
 
 .adolescents-bg { background: #00B4CC url('../img/adolescents.jpg') no-repeat center top; }
 
-.anger-bg { background: #323232 url('../img/anger.jpg') no-repeat center bottom; }
+.SFgroup-bg { background: #323232 url('../img/SFGroup.jpg') no-repeat center top; }
+
+.women-bg { background: #323232 url('../img/women.jpg') no-repeat center bottom; }
 
 .collegestudentcircle-bg { background: #323232 url('../img/collegestudentcircle.jpg') no-repeat center top; }
 
 .parenting-bg { background: #323232 url('../img/parenting.jpg') no-repeat center top; }
 
-.sadwoman-bg { background: #323232 url('../img/sadwoman.jpg') no-repeat center top; }
+.processgroup-bg { background: #323232 url('../img/processgroup.jpg') no-repeat center top; }
 
 .supportgroup-bg { background: #323232 url('../img/supportgroup.jpg') no-repeat center top; }
 
@@ -1121,4 +1146,7 @@ input[placeholder], [placeholder], *[placeholder] { color: #fff !important; }
 body { padding: 20px;}
 .outer-box { 
 	width: 105%;
-	left: -5%; } }
+	left: -5%; }
+.effect-one { 
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; } }

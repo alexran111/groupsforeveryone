@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:700,300,100);
+@import url(http://fonts.googleapis.com/css?family=Lato:700,400,300,100);
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);
 @import url(../fontawesome/css/font-awesome.min.css);
 html {
 	-webkit-font-smoothing: antialiased;
@@ -45,6 +46,11 @@ margin: 0;
 
 form {
 margin: 0 0 0;
+}
+
+h1, h2, h3 {
+font-family: 'Old Standard TT', 'Times New Roman', sans-serif;
+font-weight: 400;
 }
 
 /* for highlights */
@@ -280,6 +286,10 @@ margin: 0 0 0;
 	width: 100%; 
 	height: 300px; 
 	position: relative; }
+
+.bp-post:hover .title {
+	color: #ccc;
+}
 	
 .bp-post .overlay { 
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -393,10 +403,10 @@ margin: 0 0 0;
 .photo-album .album .title {
 	width: 130px;
 	height: 30px;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 25px;
 	text-align: center;
-	color: #863538;
+	color: #000;/*#863538;*/
 	position: absolute;
 	top:0;
     bottom:0;
@@ -673,7 +683,12 @@ margin: 0 0 0;
 
 /* You can use this method or backstrech.js e.g the portfolio blocks */
 .person-square { background: #323232 url('../img/asilomar.jpg') no-repeat center center; }
-.person-square2 { background: #323232 url('../img/ildiko.jpg') no-repeat center center; }
+.person-square2 { 
+	background: #323232 url('../img/ildiko.jpg');
+	background-size: contain;
+	background-position: center;
+    background-repeat: no-repeat;
+}
 
 .links { background: #323232 url('../img/fishjump.jpg') no-repeat center center;}
 .articles { background: #323232 url('../img/writinghand.jpg') no-repeat center center;}
@@ -827,6 +842,19 @@ input[placeholder], [placeholder], *[placeholder] { color: #fff !important; }
 .imagebg-12 { background: #323232 url('../img/12.jpg') no-repeat center bottom; }
 
 .imagebg-13 { background: #323232 url('../img/13.jpg') no-repeat center bottom; }
+
+/*------------Added by Beni----------*/
+
+#about {
+	margin-bottom: 3em;
+}
+
+#cgplogo {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	width:25%;
+}
 
 
 /*------------- Content Slider -------------*/

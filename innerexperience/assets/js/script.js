@@ -122,10 +122,10 @@ function contentslider() {
 
 
 function map() {
-	new GMaps({
+	/*new GMaps({
 		div: '#map',
 		lat: 37.37,
 		lng: -122.10,
 		scrollwheel: false
-	});
+	});*/
 }

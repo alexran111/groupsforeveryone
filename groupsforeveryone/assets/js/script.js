@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-	Parse.initialize("wCeNDBYci7x31bs0yDRTOHHzUKeRpVAYNmaM6xR5", "NpqqgRHe91ygiGpRiqfjMEy4wWwICbe3GwDlJr2F");
+	/*Parse.initialize("wCeNDBYci7x31bs0yDRTOHHzUKeRpVAYNmaM6xR5", "NpqqgRHe91ygiGpRiqfjMEy4wWwICbe3GwDlJr2F");
 	$("#contactForm").validate({submitHandler: function (form) {
 		var $form = $(form);
 		var ContactRequest = Parse.Object.extend("ContactRequest");
@@ -15,7 +15,7 @@ $( document ).ready(function() {
 	        	alert("Oops. We could not deliver your request. Please try again later.");
 	        }
 		});
-	}});
+	}});*/
 });
 
 function menu() {
@@ -46,21 +46,21 @@ function backstretch() { // used for fulldiv backgrounds
 	$(".album").backstretch("assets/img/rainbowpeople.jpg");
 	$(".bp-post.two").backstretch("assets/img/magazineslong.jpg");
 	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
-	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
+	$(".portfolio-img.two").backstretch("assets/img/SFGroup.jpg");
 	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
-	$(".portfolio-img.four").backstretch("assets/img/anger.jpg");
+	$(".portfolio-img.four").backstretch("assets/img/women.jpg");
 	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
-	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
+	$(".portfolio-img.six").backstretch("assets/img/processgroup.jpg");
     $(window).resize(function () {
 	$(".bp-post").backstretch("assets/img/lightrowpeople.jpg");
 	$(".album").backstretch("assets/img/rainbowpeople.jpg");
 	$(".bp-post.two").backstretch("assets/img/magazineslong.jpg");
 	$(".portfolio-img.one").backstretch("assets/img/adolescents.jpg");
-	$(".portfolio-img.two").backstretch("assets/img/parenting.jpg");
+	$(".portfolio-img.two").backstretch("assets/img/SFGroup.jpg");
 	$(".portfolio-img.three").backstretch("assets/img/supportgroup.jpg");
-	$(".portfolio-img.four").backstretch("assets/img/anger.jpg");
+	$(".portfolio-img.four").backstretch("assets/img/women.jpg");
 	$(".portfolio-img.five").backstretch("assets/img/collegestudentcircle.jpg");
-	$(".portfolio-img.six").backstretch("assets/img/sadwoman.jpg");
+	$(".portfolio-img.six").backstretch("assets/img/processgroup.jpg");
     });
 }
 
@@ -116,10 +116,10 @@ function contentslider() {
 }
 
 function map() {
-	new GMaps({
+	/*new GMaps({
 		div: '#map',
 		lat: 37.37,
 		lng: -122.10,
 		scrollwheel: false
-	});
+	});*/
 }
